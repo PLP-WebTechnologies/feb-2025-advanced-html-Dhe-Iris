@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Development</title>
+  </head>
+  <body>
+    <header>
+      <h1>Web Development Week 2</h1>
+    </header>
+    <hr />
+
+    <main>
+      <!-- --------section 1------- -->
+      <h3>Section One: Nested List</h3>
+      <ol>
+        <li>Name</li>
+        <ol type="i">
+          <li>John Rose</li>
+          <li>Rose Mary</li>
+          <li>Priscilla Bags</li>
+        </ol>
+        <li>Gender</li>
+        <ol type="i">
+          <li>Male</li>
+          <li>Female</li>
+        </ol>
+        <li>Favorite Fruit</li>
+        <ol type="i">
+          <li>Mango</li>
+          <li>Banana</li>
+          <li>Grapes</li>
+        </ol>
+      </ol>
+      <hr />
+
+      <!-- --------section 2----  -->
+      <h3>Section Two: Embedded Image</h3>
+      <img
+        src="https://images.pexels.com/photos/3992656/pexels-photo-3992656.png?auto=compress&cs=tinysrgb&w=600"
+        alt="Picture of a beautiful black woman"
+        height="300px"
+      />
+      <hr />
+
+      <!-- --------section 3-------- -->
+      <h3>Section Three: Table</h3>
+      <table border="1">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Address</th>
+            <th>Mobile</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>John Rose</td>
+            <td>johnrose@gmail.com</td>
+            <td>1, Lagos Island, Nigeria</td>
+            <td>+2347056427856</td>
+          </tr>
+          <tr>
+            <td>Rose Mary</td>
+            <td>rosemary@gmail.com</td>
+            <td>1, Ibadan Island, Nigeria</td>
+            <td>+2348056342389</td>
+          </tr>
+          <tr>
+            <td>Priscilla Bags</td>
+            <td>pribags@gmail.com</td>
+            <td>Lekki Phase 1, Lagos Island, Nigeria</td>
+            <td>+2348567490337</td>
+          </tr>
+        </tbody>
+      </table>
+      <hr />
+
+      <!-- --------section 4------ -->
+      <h3>Section Four: Registration Form</h3>
+      <form>
+        <!-- Name Field -->
+        <label for="fullname">Fullname:</label>
+        <input type="text" id="fullname" placeholder="John Doe" required />
+        <br />
+
+        <!-- Email Field -->
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          placeholder="example@gmail.com"
+          required
+        />
+        <br />
+
+        <!-- Password Field -->
+        <label for="password">Password:</label>
+        <input
+          type="password"
+          id="password"
+          placeholder="123456"
+          required
+          pattern="[0-9]{6}"
+          title="Password must be exactly 6 digits."
+        />
+        <br />
+
+        <!-- Gender Radio Buttons -->
+        <label for="gender">Gender:</label><br />
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="male" required />
+        <label for="female">Female</label>
+        <input type="radio" name="gender" id="female" required />
+        <br />
+
+        <!-- Date Field -->
+        <label for="date">Date of Birth:</label>
+        <input type="date" id="date" required />
+        <br />
+
+        <!-- Favorite Sport Checkboxes -->
+        <label for="sport">Favorite sport:</label><br />
+        <label for="football">Football</label>
+        <input type="checkbox" name="sport" id="football" />
+        <label for="hockey">Hockey</label>
+        <input type="checkbox" name="sport" id="hockey" />
+        <label for="golf">Golf</label>
+        <input type="checkbox" name="sport" id="golf" />
+        <br />
+
+        <!-- Pet Dropdown -->
+        <label for="pet">What Pet Do You Own?:</label>
+        <select name="pet" id="pet">
+          <option value="">Select pet</option>
+          <option value="dog">Dog</option>
+          <option value="cat">Cat</option>
+          <option value="monkey">Monkey</option>
+          <option value="none">None</option>
+        </select>
+        <br />
+
+        <!-- Submit Button -->
+        <button type="submit">Submit</button>
+      </form>
+    </main>
+  </body>
+</html>
